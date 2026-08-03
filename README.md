@@ -22,21 +22,4 @@ The goal is not simply to memorize Cisco IOS commands or networking definitions.
 
 Major changes to the network will be documented as separate iterations within this repository. Each iteration will document the network at that point in its development.
 
-This creates a visible progression from a simple network into a more capable environment rather than a collection of unrelated labs.
-
-## Documentation
-
-The project will primarily be documented through:
-
-- Packet Tracer screenshots
-- Configuration examples
-- Verification output
-- Explanations of design decisions
-- Troubleshooting observations
-- Visual demonstrations when useful
-
-Packet Tracer project files are not included. The repository is intended to document the design, and development of the network in a format that can be reviewed without requiring Cisco Packet Tracer.
-
----
-
 > **Status:** Repository framework established. Initial LAN design pending.
