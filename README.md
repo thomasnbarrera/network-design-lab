@@ -22,4 +22,3 @@ The goal is not simply to memorize Cisco IOS commands or networking definitions.
 
 Major changes to the network will be documented as separate iterations within this repository. Each iteration will document the network at that point in its development.
 
-> **Status:** Repository framework established. Initial LAN design pending.
