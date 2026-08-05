@@ -2,6 +2,10 @@
 
 This repository documents a Cisco Packet Tracer network that I am designing and expanding alongside my CCNA studies.
 
+Major changes to the network will be documented as separate iterations within this repository. Each iteration will document the network at that point in its development.
+
+Most recent iteration: 01-foundational-lan
+
 ## About the Project
 
 I am currently studying for the Cisco Certified Network Associate (CCNA), primarily using Jeremy's IT Lab along with additional networking resources.
@@ -17,8 +21,4 @@ Every major change requires me to understand:
 - **How** to troubleshoot it when it does not behave as expected
 
 The goal is not simply to memorize Cisco IOS commands or networking definitions. The goal is to turn those concepts into a functioning network that I can explain, configure, and troubleshoot.
-
-## Project Development
-
-Major changes to the network will be documented as separate iterations within this repository. Each iteration will document the network at that point in its development.
 
