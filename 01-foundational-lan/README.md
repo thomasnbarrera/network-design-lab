@@ -6,7 +6,8 @@ My primary objective for this iteration is to design and configure the initial L
 
 Included below are personal notes (non-exhaustive) from my CCNA and Network+ studies that were especially useful in understanding and implementing this iteration.
 
-**INSERT PDF FILE HERE**
+- [CCNA Notes](./supplemental/01-ccna-notes.pdf)
+- [Network+ Notes](./supplemental/01-netplus-notes.pdf)
 
 ---
 
@@ -22,7 +23,7 @@ Packet Tracer has a generic PC option that seemed suitable for this lab. I power
 
 For the physical connections, I used **copper straight-through cabling**. Traditionally, straight-through versus crossover cabling depended on the types of devices being connected, but **auto-MDI/MDIX** makes that distinction largely irrelevant on modern Ethernet interfaces that support it.
 
-**INSERT SCREENSHOT**
+![Step 1 - Hardware Selection](./supplemental/01-foundational-lan-step1.png)
 
 ### Step 2: Configuring Settings/Assigning IPv4 Addresses
 
@@ -30,7 +31,9 @@ To begin, I decided to use a **/24 IPv4 network** for the initial LAN. With this
 
 I then configured an appropriate hostname on the switch, verified that the interfaces connected to the PCs were operational, and added descriptions to the connected interfaces to make their purpose easier to identify.
 
-**INSERT SCREENSHOT OF SWITCH CLI OUTPUT**
+![Step 2 - IPv4 Configuration](./supplemental/01-foundational-lan-step2.png)
+
+![Step 2 - Switch Configuration](./supplemental/01-foundational-lan-step2-2.png)
 
 ---
 
@@ -46,4 +49,6 @@ PC1 was able to successfully ping PC2, and PC3 was able to successfully ping PC1
 
 **Result:** Successful
 
-**INSERT SCREENSHOT/VIDEO OF LAB FUNCTIONING OR RELEVANT OUTPUT**
+![Verification - Connectivity Test](./supplemental/01-foundational-lan-step3.png)
+
+![Verification - Connectivity Test](./supplemental/01-foundational-lan-step3-2.png)
