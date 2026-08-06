@@ -2,7 +2,7 @@
 
 ## Objective
 
-My primary objective for this iteration is to design and configure the initial LAN that will serve as the foundation for the larger network. The focus is on selecting appropriate switching hardware, configuring basic device settings/assigning IPv4 addresses, and establishing local connectivity.
+My primary objective for this iteration was to design and configure the initial LAN that would serve as the foundation for the larger network. The focus was on selecting appropriate switching hardware, configuring basic device settings and IPv4 addresses, and establishing local connectivity.
 
 Included below are personal notes (non-exhaustive) from my CCNA and Network+ studies that were especially useful in understanding and implementing this iteration.
 
@@ -13,23 +13,19 @@ Included below are personal notes (non-exhaustive) from my CCNA and Network+ stu
 
 ## Design & Implementation
 
-This section provides an overview of what I completed, the logical process used to complete each task, and the reasoning behind key implementation decisions. Screenshots are included for illustrative purposes.
-
 ### Step 1: Choosing Appropriate Hardware
 
-I wanted to pick a piece of switching hardware that could grow with this project, and decided on the **Cisco Catalyst 3650-24PS**. I did a bit of research into the model names of the switching devices available in Packet Tracer and found that Cisco’s older Catalyst model numbers can provide some clues about their capabilities. For example, switches such as the Catalyst 2960 are primarily Layer 2 access switches, while models such as the 3560 and 3650 are multilayer switches capable of Layer 3 functionality. Cisco’s newer Catalyst 9000 series uses a different product structure, but perhaps I’ll circle back to that topic in a later iteration or separate lab.
+I wanted to pick a piece of switching hardware that could grow with this project, and decided on the Cisco Catalyst 3650-24PS. I did a bit of research into the model names of the switching devices available in Packet Tracer and found that Cisco’s older Catalyst model numbers can provide some clues about their capabilities (e.g., switches such as the Catalyst 2960 are primarily L2 switches, while models such as the 3560 and 3650 are multilayer switches capable of L3 functions). Cisco’s newer Catalyst 9000 series uses a different structure/naming scheme, but perhaps I’ll circle back to that topic in a later iteration.
 
-Packet Tracer has a generic PC option that seemed suitable for this lab. I powered off each PC and replaced the default FastEthernet NIC with a Gigabit Ethernet-capable NIC so the end devices could use Gigabit Ethernet connections.
-
-For the physical connections, I used **copper straight-through cabling**. Traditionally, straight-through versus crossover cabling depended on the types of devices being connected, but **auto-MDI/MDIX** makes that distinction largely irrelevant on modern Ethernet interfaces that support it.
+Packet Tracer has a generic PC option that seemed suitable for this lab. I powered off each PC and replaced the default FastEthernet NIC with a GigabitEthernet NIC so the end devices could use Gigabit Ethernet connections.
 
 ![Step 1 - Hardware Selection](./supplemental/01-foundational-lan-step1.png)
 
 ### Step 2: Configuring Settings/Assigning IPv4 Addresses
 
-To begin, I decided to use a **/24 IPv4 network** for the initial LAN. With this addressing scheme in mind, I configured each PC with an IPv4 address within the same subnet and applied the appropriate subnet mask.
+To begin, I decided to use a /24 IPv4 network for the initial LAN. With this addressing scheme in mind, I configured each PC with an IPv4 address within the same subnet and applied the appropriate subnet mask.
 
-I then configured an appropriate hostname on the switch, verified that the interfaces connected to the PCs were operational, and added descriptions to the connected interfaces to make their purpose easier to identify.
+I then configured an appropriate hostname on the switch, verified that the interfaces connected to the PCs were operational, and added descriptions to the connected interfaces to make them easier to identify (During verification, I realized that Packet Tracer doesn't support the 'show interfaces description' command - workaround would be 'show running-config').
 
 ![Step 2 - IPv4 Configuration](./supplemental/01-foundational-lan-step2.png)
 
@@ -39,9 +35,9 @@ I then configured an appropriate hostname on the switch, verified that the inter
 
 ## Verification
 
-Now it’s time to verify that this iteration is functioning as intended. As stated above, the primary objectives for this iteration were to select appropriate switching hardware, configure basic device settings and IPv4 addressing, and establish local connectivity.
+Now it was time to verify that this iteration was functioning as intended. As stated above, the primary objectives for this iteration were to select appropriate switching hardware, configure basic device settings and IPv4 addressing, and establish local connectivity.
 
-To test functionality and confirm the success of my configurations, I will use `ping` to verify connectivity between the PCs. The remaining objectives were verified through the configuration and screenshots shown above.
+To test functionality and confirm the success of my configurations, I used ping to verify connectivity between the PCs. The remaining objectives were verified through the configuration and screenshots shown above.
 
 ### Verification Results
 
