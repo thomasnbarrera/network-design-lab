@@ -1,4 +1,4 @@
-# 01-foundational-lan
+# Foundational LAN
 
 ## Objective
 
